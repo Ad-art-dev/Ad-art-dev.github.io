@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>Text Alignments</h2>
+
+  <div class="w3-container w3-border w3-large">
+    <div class="w3-left-align"><p>Left aligned text.</p></div>
+    <div class="w3-right-align"><p>Right aligned text.</p></div>
+  </div>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-container">
+
+<h2>Accordion Buttons</h2>
+<p>You can use any HTML element to open the accordion content. We prefer a button with a w3-block class, because it spans the entire width of its parent element, just like the accordion content (100% width). Remember that buttons in W3.CSS are centered by default. Use the w3-left-align class if you want them left aligned instead. However, you do not have to follow our approach.</p>
+
+<button onclick="myFunction('Demo1')" class="w3-button w3-light-grey">
+Normal button</button>
+
+<div id="Demo1" class="w3-hide w3-container w3-light-grey">
+  <p>Lorem ipsum...</p>
+</div>
+<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-left-align w3-green">
+Left aligned and full-width</button>
+
+<div id="Demo2" class="w3-hide w3-container">
+  <p>Lorem ipsum...</p>
+</div>
+
+<button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-red">
+Centered and full-width</button>
+
+<div id="Demo3" class="w3-hide w3-container w3-center w3-pale-red">
+  <p>Centered content as well!</p>
+</div>
+
+</div>
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>Navigation Bars</h2>
+  <p>The <strong>w3-bar</strong> class is a container for displaying HTML elements horizontally.</p>
+  <p>The <strong>w3-bar-item</strong> class defines the container elements.</p>
+  <p>It it a perfect tool for creating navigation bars:</p>
+</div>
+
+<div class="w3-bar w3-black">
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container w3-center w3-animate-left">
+  <h1>Animation is Fun!</h1>
+  <p>The w3-animate-left class slides in an element from left.</p>
+</div>
+
+</body>
+</html>
